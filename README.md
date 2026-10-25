@@ -5,14 +5,13 @@ IrisTech is a custom 3D game engine written in C++ and developed from scratch.
 The project focuses on real-time rendering, engine architecture, scene management,
 graphics programming, animation, deformation, and game development technologies.
 
-> The engine is currently under active development.
-> This repository serves as a public technical showcase of the project. The engine source code is not published here.
+> This repository serves as a public technical showcase of the project.
 
 ---
 
 ## Features
 
-Currently implemented or actively developed:
+Engine features include:
 
 - 3D rendering with bgfx and DirectX 11
 - Custom vertex and fragment shader pipeline
@@ -37,8 +36,6 @@ Currently implemented or actively developed:
 - Spatial grid acceleration and experimental GPU deformation
 - Debug counters and large-scene stress testing
 - CMake-based build system and Windows build packaging
-
-Some of these features are experimental and continue to be tested and optimized.
 
 ---
 
@@ -115,9 +112,9 @@ Earlier tests of scene editing, materials, lighting, and shadow mapping.
 
 ## Rendering
 
-The rendering system remains one of the main areas of development in IrisTech.
+The rendering system provides real-time 3D graphics, lighting, and scene visualization.
 
-Current rendering features include:
+Rendering features include:
 
 - 3D mesh rendering
 - Material and texture parameters
@@ -139,7 +136,7 @@ The renderer currently uses **bgfx** with the **DirectX 11 backend** on Windows.
 
 IrisTech supports configurable directional lighting and multiple point lights.
 
-Current functionality includes:
+Lighting functionality includes:
 
 - Light direction, position, color, and intensity
 - Point-light radius and attenuation
@@ -148,8 +145,6 @@ Current functionality includes:
 - Point-light cubemap shadows
 - Shadow quality controls
 - Frustum-based shadow rendering optimizations
-
-The lighting system is being tuned for large and detailed game scenes.
 
 ---
 
@@ -174,7 +169,7 @@ The scene graph supports parent-child relationships, object groups, and nested o
 
 The engine contains its own scene and project management system.
 
-Current functionality includes:
+Scene functionality includes:
 
 - Scene creation, loading, and saving
 - Project files (`.irisproj`)
@@ -184,15 +179,13 @@ Current functionality includes:
 - Model import and placement
 - Separate editor and Play Mode scene states
 
-The long-term goal is a flexible workflow for creating complete games inside IrisTech.
-
 ---
 
 ## Editor
 
 IrisTech includes editor tools built with **Dear ImGui**.
 
-Current editor functionality includes:
+Editor functionality includes:
 
 - Scene viewport and camera navigation
 - Hierarchy and Inspector panels
@@ -204,8 +197,6 @@ Current editor functionality includes:
 - Animation editing and preview tools
 - Play Mode
 - Debug console and rendering statistics
-
-The editor is developed alongside the game runtime.
 
 ---
 
@@ -231,9 +222,9 @@ version of this approach; the project does not claim to have invented the techni
 
 ## Animation, Scripting & Audio
 
-The engine is being extended beyond rendering into interactive game systems.
+Animation, scripting, and audio are integrated with the editor and game runtime.
 
-Current functionality includes:
+Functionality includes:
 
 - Skeletal animation, rigs, clips, and keyframes
 - Animation preview and editing tools
@@ -242,16 +233,13 @@ Current functionality includes:
 - Script examples for game logic and interactions
 - miniaudio playback and editor audio controls
 
-Gameplay APIs, animation controllers, and more advanced audio/game integration
-are still being developed.
-
 ---
 
 ## Performance
 
 Rendering performance is an important part of the project.
 
-Current optimization work includes:
+Optimization techniques and tools include:
 
 - Frustum culling
 - Experimental occlusion culling
@@ -262,72 +250,6 @@ Current optimization work includes:
 - Rendering statistics and dense stress-test scenes
 - Experimental parallel preparation and GPU deformation paths
 
-Future development will also include:
-
-- Additional batching and instancing improvements
-- Level of Detail systems
-- More comprehensive CPU and GPU profiling
-- Further multithreaded rendering preparation
-
 The screenshots demonstrate development scenes, not measured FPS benchmarks.
-
----
-
-## Development Status
-
-IrisTech is under active development.
-
-### Current Focus
-
-- Rendering optimization
-- Lighting and shadow quality
-- Visibility culling
-- Editor workflow
-- Lua gameplay integration
-- Animation and audio systems
-- Tetrahedral deformation performance
-- Development of a first playable game
-
-### Planned Features
-
-- Physics and collision integration
-- Expanded player and enemy gameplay systems
-- Improved animation controllers
-- Standalone game runtime
-- Game packaging and save systems
-- Level of Detail and advanced profiling
-- Further editor and asset management improvements
-
----
-
-## Project Goals
-
-The main goals of IrisTech are:
-
-- Explore modern C++ game engine architecture
-- Build custom rendering and game development systems
-- Experiment with real-time graphics, deformation, and optimization
-- Create a reusable foundation for game projects
-- Develop a dark-fantasy first-person action game with fast combat
-- Build complete games using IrisTech
-
----
-
-## Source Code
-
-The IrisTech engine source code is currently private.
-
-This repository is a **showcase only**, intended to demonstrate:
-
-- Engine development progress
-- Implemented and experimental systems
-- Rendering capabilities
-- Architecture and technical experiments
-- Screenshots from real development builds
-
-**No engine source files, complete projects, binaries, or proprietary assets are distributed here.**
-Cloning this repository alone will not build or run the engine.
-
-The showcase will be updated as IrisTech continues to evolve.
 
 ---
