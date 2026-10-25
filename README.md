@@ -254,3 +254,12 @@ Optimization techniques and tools include:
 The screenshots demonstrate development scenes, not measured FPS benchmarks.
 
 ---
+
+## Author & Links
+
+**Maxim Bastrykin**
+
+- **Personal Website / Portfolio:** [mbastrykin.ru](https://mbastrykin.ru)
+- **GitHub:** [github.com/mbastrykin](https://github.com/mbastrykin)
+
+---
