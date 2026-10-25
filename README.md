@@ -215,8 +215,9 @@ Current implementation includes:
 - Dedicated regression tests for the CPU deformation pipeline
 - Experimental GPU deformation work
 
-Tetrahedral cages are an established graphics technique. IrisTech implements its own
-version of this approach; the project does not claim to have invented the technique.
+IrisTech features a custom C++ Tetrahedral Cage deformation pipeline that binds
+render meshes to volumetric cages using barycentric coordinates. AABB filtering,
+spatial-grid acceleration, and batch processing support complex deformation workflows.
 
 ---
 
