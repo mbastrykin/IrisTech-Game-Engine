@@ -93,13 +93,55 @@ The Android gameplay build demonstrates:
 - Nighttime lighting, atmospheric effects, and rainy weather
 - On-screen steering, accelerator, brake, and pause controls
 - A gameplay HUD with speed, score, high score, collected coins, and a multiplier
-- Objectives, timed boosts, and vehicle-condition feedback
+- Bonuses for close passes through traffic, objectives, boosts, and vehicle-condition feedback
+- A run-summary screen with results, retry, and main-menu controls
 - Game content running through the IrisTech mobile runtime
 
-![Pedal to the Medal Android gameplay in rain](screenshots/pedal-to-the-medal-android-rain.png)
+### Android Gameplay Gallery
 
-*Pedal to the Medal running on Android — a rainy nighttime driving scene with
-traffic, touch controls, and the in-game HUD.*
+Click a screenshot to view it at full resolution.
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <a href="screenshots/pedal-to-the-medal-android-rain.png"><img src="screenshots/pedal-to-the-medal-android-rain.png" alt="Night driving in rain" width="190"></a><br>
+      <sub>Rainy night drive</sub>
+    </td>
+    <td align="center" width="25%">
+      <a href="screenshots/pedal-to-the-medal-daytime-highway.png"><img src="screenshots/pedal-to-the-medal-daytime-highway.png" alt="Driving on a sunlit highway" width="190"></a><br>
+      <sub>Daytime highway</sub>
+    </td>
+    <td align="center" width="25%">
+      <a href="screenshots/pedal-to-the-medal-traffic-streak.png"><img src="screenshots/pedal-to-the-medal-traffic-streak.png" alt="Close overtakes near city traffic" width="190"></a><br>
+      <sub>Traffic streak</sub>
+    </td>
+    <td align="center" width="25%">
+      <a href="screenshots/pedal-to-the-medal-hillside-road.png"><img src="screenshots/pedal-to-the-medal-hillside-road.png" alt="Winding hill road with coin pickups" width="190"></a><br>
+      <sub>Hillside roads</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="25%">
+      <a href="screenshots/pedal-to-the-medal-city-streets.png"><img src="screenshots/pedal-to-the-medal-city-streets.png" alt="Urban road and buildings" width="190"></a><br>
+      <sub>Urban district</sub>
+    </td>
+    <td align="center" width="25%">
+      <a href="screenshots/pedal-to-the-medal-rainy-downhill.png"><img src="screenshots/pedal-to-the-medal-rainy-downhill.png" alt="Rainy downhill road" width="190"></a><br>
+      <sub>Rainy downhill</sub>
+    </td>
+    <td align="center" width="25%">
+      <a href="screenshots/pedal-to-the-medal-rainy-traffic.png"><img src="screenshots/pedal-to-the-medal-rainy-traffic.png" alt="Rainy traffic with pickup items" width="190"></a><br>
+      <sub>Rain & pickups</sub>
+    </td>
+    <td align="center" width="25%">
+      <a href="screenshots/pedal-to-the-medal-run-summary.png"><img src="screenshots/pedal-to-the-medal-run-summary.png" alt="End-of-run results and menu" width="190"></a><br>
+      <sub>Run summary</sub>
+    </td>
+  </tr>
+</table>
+
+*Pedal to the Medal on Android — daytime and rainy conditions, hilly and urban
+roads, traffic overtakes, collectibles, touch controls, and the run-summary UI.*
 
 The game serves as a practical integration test for a standalone project that
 runs on the engine without requiring game-specific changes to its core.
