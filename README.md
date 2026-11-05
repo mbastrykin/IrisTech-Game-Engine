@@ -4,6 +4,8 @@ IrisTech is a custom 3D game engine written in C++ and developed from scratch.
 
 The project focuses on real-time rendering, engine architecture, scene management,
 graphics programming, animation, deformation, and game development technologies.
+It also powers **Pedal to the Medal**, an arcade-driving game used to test IrisTech
+on Windows and Android.
 
 > This repository serves as a public technical showcase of the project.
 
@@ -35,6 +37,11 @@ Engine features include:
 - Tetrahedral Cage deformation system
 - Spatial grid acceleration and experimental GPU deformation
 - Debug counters and large-scene stress testing
+- Windows game player and Android native game runtime
+- Android touch input and on-screen game controls
+- Project-based Windows and Android game build workflows
+- Experimental Jolt Physics integration
+- Atmospheric fog, automatic LOD, and model-streaming experiments
 - CMake-based build system and Windows build packaging
 
 ---
@@ -44,13 +51,14 @@ Engine features include:
 Core engine technologies:
 
 - **C++**
-- **bgfx**
+- **bgfx**, **bx**, and **bimg**
 - **DirectX 11** (current Windows rendering backend)
 - **SDL3**
 - **EnTT**
 - **Dear ImGui** (docking-enabled build)
 - **GLM**
 - **Lua 5.5**
+- **Jolt Physics**
 - **miniaudio**
 - **nlohmann/json**
 
@@ -60,6 +68,7 @@ Development and build tools:
 - **vcpkg**
 - **Visual Studio 2022**, **MSVC**, and **MSBuild**
 - **Windows SDK**
+- **Android SDK**, **NDK**, and **Gradle**
 - **PowerShell** shader build scripts
 - **Git** and **GitHub Actions**
 - **bgfx shader tools**
@@ -68,6 +77,32 @@ The vcpkg dependency and graphics toolchain also includes **cgltf**, **meshoptim
 **glslang**, **SPIRV-Cross**, **SPIRV-Tools**, **SPIRV-Headers**, **stb**, **tinyexr**,
 **miniz**, and supporting libraries. Some are transitive dependencies or build tools,
 not separate engine subsystems.
+
+---
+
+## Game Showcase — Pedal to the Medal
+
+**Pedal to the Medal** (formerly **Huitaapk**) is an arcade-driving game built
+with IrisTech. It is an end-to-end test project for the engine's rendering,
+scene assets, game logic, input, and Android runtime. The project revisits a
+driving-game remake originally developed with Unity in 2021–2022.
+
+The Android gameplay build demonstrates:
+
+- A 3D road environment with traffic vehicles and roadside scenery
+- Nighttime lighting, atmospheric effects, and rainy weather
+- On-screen steering, accelerator, brake, and pause controls
+- A gameplay HUD with speed, score, high score, collected coins, and a multiplier
+- Objectives, timed boosts, and vehicle-condition feedback
+- Game content running through the IrisTech mobile runtime
+
+![Pedal to the Medal Android gameplay in rain](screenshots/pedal-to-the-medal-android-rain.png)
+
+*Pedal to the Medal running on Android — a rainy nighttime driving scene with
+traffic, touch controls, and the in-game HUD.*
+
+The game serves as a practical integration test for a standalone project that
+runs on the engine without requiring game-specific changes to its core.
 
 ---
 
@@ -87,18 +122,19 @@ real-time shadows, atmospheric rendering, and editor tools.
 Editor interface with hierarchical scene objects, model and transform tools,
 rendering controls, and Play Mode.
 
-### Forest Stress Scene
+### Forest Scene — Vegetation & Tetrahedral Cage Tests
 
 ![IrisTech Forest Stress Scene](screenshots/forest-stress-scene.png)
 
-A dense test environment with large amounts of vegetation and shadow-casting objects.
-Used to investigate rendering performance and visibility culling.
+A dense forest environment used for vegetation-related Tetrahedral Cage
+experiments, as well as rendering stress tests and shadow visibility analysis.
 
-### Debug Visualization
+### Forest Debug Visualization — Cage Experiments
 
 ![IrisTech Forest Debug Visualization](screenshots/forest-debug-overlay.png)
 
-Development-time wireframe and debug overlays displayed in the forest scene.
+Development-time geometry and debug overlays from the forest vegetation tests,
+used to inspect scene structure and deformation-related geometry.
 
 ### Earlier Rendering Experiments
 
@@ -179,6 +215,10 @@ Scene functionality includes:
 - Model import and placement
 - Separate editor and Play Mode scene states
 
+Game projects can target the Windows player and the Android native runtime.
+The Android workflow uses project assets, a generated Gradle app, and a
+prebuilt mobile engine library rather than bundling private engine sources.
+
 ---
 
 ## Editor
@@ -218,6 +258,8 @@ Current implementation includes:
 IrisTech features a custom C++ Tetrahedral Cage deformation pipeline that binds
 render meshes to volumetric cages using barycentric coordinates. AABB filtering,
 spatial-grid acceleration, and batch processing support complex deformation workflows.
+The forest screenshots above document tests involving vegetation and cage-related
+geometry visualization.
 
 ---
 
