@@ -82,7 +82,7 @@ not separate engine subsystems.
 
 ## Game Showcase — Pedal to the Medal
 
-**Pedal to the Medal** (formerly **Huitaapk**) is an arcade-driving game built
+**Pedal to the Medal** is an arcade-driving game built
 with IrisTech. It is an end-to-end test project for the engine's rendering,
 scene assets, game logic, input, and Android runtime. The project revisits a
 driving-game remake originally developed with Unity in 2021–2022.
