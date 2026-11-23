@@ -9,6 +9,22 @@ on Windows and Android.
 
 > This repository serves as a public technical showcase of the project.
 
+## Public Evidence & Verification
+
+This public repository is a **technical showcase**, not the private engine source. The links below point to existing artifacts, with the scope of each claim made explicit.
+
+| Demonstration | Directly inspectable artifact | Evidence strength |
+| --- | --- | --- |
+| Scene editing, hierarchy and Play Mode UI | [Editor screenshot](screenshots/hierarchy-play-mode.png) | **Visual only** — does not prove save/reload or scene-state correctness |
+| Lighting, shadow appearance and materials | [Dark Castle scene](screenshots/dark-castle-editor.png) · [lighting test](screenshots/lighting-and-shadows.png) | **Visual only** — no measured FPS or proof of a particular algorithm |
+| Forest scene and cage debug geometry | [Forest scene](screenshots/forest-stress-scene.png) · [debug overlay](screenshots/forest-debug-overlay.png) | **Visual only** — deformation behavior and optimization results require a recorded test |
+| Pedal to the Medal mobile-game visuals and UI | [Eight gameplay screenshots](#android-gameplay-gallery) | **Visual only** — a reproducible APK/device demo is not published here |
+| Lua, Jolt Physics, audio, build workflows, CPU/GPU optimizations | Described in [Features](#features) | **Documented claims** — public validation artifacts not yet attached |
+
+**Snapshot:** the Android screenshot gallery was updated on [5 November 2026](https://github.com/mbastrykin/IrisTech-Game-Engine/commit/d7d69b853375b0b148280d3c1707e2872b47b37a). This showcase currently provides screenshots, but no downloadable GitHub Release or reproducible performance benchmark. No FPS or test-pass figures are asserted without measurements.
+
+**[Evidence register and verification checklist →](EVIDENCE.md)** — what each screenshot supports, what remains unverified publicly, and which demo recordings, test logs and measurements would substantiate the engineering claims.
+
 ---
 
 ## Features
